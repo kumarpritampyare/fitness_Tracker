@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(255, 183, 0);
+
+    }
+    body h1{
+      font-size: 34px;
+      border: 5px solid rgb(63,62,62);
+      border-radius: 40px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      margin-left: 500px;
+      margin-right: 500px;
+      padding-left:20px ;
+    }
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 5px solid rgb(63,62,62);
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      margin-top: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .form-group input[type="submit"] {
+      background-color: #000000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #000000;
+    }
+    .form-group.login-link {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>Welcome to Fitness Tracker</h1>
+<div class="container">
+  <h2>Login</h2>
+  <form id="signup-form" action="#" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your mail" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="login">
+    </div>
+  </form>
+  <div class="form-group login-link">
+    <a href="signup.html" id="login-link" target="_blank">New user? Sign up here</a>
+  </div>
+</div>
+
+
+
+<!-- <script>
+  document.getElementById('login-link').addEventListener('click', function() {
+    document.getElementById('login-container').style.display = 'block';
+    document.getElementById('signup-container').style.display = 'none';
+  });
+
+  document.getElementById('signup-link').addEventListener('click', function() {
+    document.getElementById('login-container').style.display = 'none';
+    document.getElementById('signup-container').style.display = 'block';
+  });
+</script> -->
+
+</body>
+</html>

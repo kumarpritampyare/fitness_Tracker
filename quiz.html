@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Goals Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 183, 0);
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 5px solid rgb(63,62,62);
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+<body>
+<div class="quiz-container">
+    <h1>Fitness Goals Quiz</h1>
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. What is your primary fitness goal?</p>
+            <label><input type="radio" name="q1" value="a">a) Lose weight</label><br>
+            <label><input type="radio" name="q1" value="b">b) Build muscle</label><br>
+            <label><input type="radio" name="q1" value="c">c) Increase endurance</label><br>
+            <label><input type="radio" name="q1" value="d">d) Improve flexibility</label>
+        </div>
+        <div class="question">
+            <p>2. How many days per week are you willing to commit to exercise?</p>
+            <label><input type="radio" name="q2" value="a">a) 1-2 days</label><br>
+            <label><input type="radio" name="q2" value="b">b) 3-4 days</label><br>
+            <label><input type="radio" name="q2" value="c">c) 5-6 days</label><br>
+            <label><input type="radio" name="q2" value="d">d) 7 days</label>
+        </div>
+        <div class="question">
+            <p>3. Which type of exercise do you enjoy the most?</p>
+            <label><input type="radio" name="q3" value="a">a) Running/jogging</label><br>
+            <label><input type="radio" name="q3" value="b">b) Weightlifting/strength training</label><br>
+            <label><input type="radio" name="q3" value="c">c) Cycling/spinning</label><br>
+            <label><input type="radio" name="q3" value="d">d) Yoga/Pilates</label>
+        </div>
+        <div class="question">
+            <p>4. What is your preferred time of day for exercise?</p>
+            <label><input type="radio" name="q4" value="a">a) Morning</label><br>
+            <label><input type="radio" name="q4" value="b">b) Afternoon</label><br>
+            <label><input type="radio" name="q4" value="c">c) Evening</label><br>
+            <label><input type="radio" name="q4" value="d">d) Anytime</label>
+        </div>
+        <div class="question">
+            <p>5. What is your ultimate fitness goal?</p>
+            <label><input type="radio" name="q5" value="a">a) Run a marathon</label><br>
+            <label><input type="radio" name="q5" value="b">b) Bench press your body weight</label><br>
+            <label><input type="radio" name="q5" value="c">c) Complete a triathlon</label><br>
+            <label><input type="radio" name="q5" value="d">d) Achieve a full split</label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
